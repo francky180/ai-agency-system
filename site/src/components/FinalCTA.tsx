@@ -28,13 +28,13 @@ export default function FinalCTA() {
 
         <div className="mt-10 flex flex-col items-center gap-4 w-full sm:flex-row sm:justify-center">
           <a
-            href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
+            href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
             className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
           >
             Get Started — $250
           </a>
           <a
-            href="https://buy.stripe.com/3cI14n7Og2rn6g00Vhao804"
+            href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
             className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent-light tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
           >
             Full System — $1,500

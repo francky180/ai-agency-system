@@ -3,8 +3,8 @@
 import { motion } from "motion/react";
 
 const LINKS = {
-  entry: "https://buy.stripe.com/14k2bnf256Oh0gwdQQ",
-  premium: "https://buy.stripe.com/3cI14n7Og2rn6g00Vhao804",
+  entry: "https://buy.stripe.com/00g8zL2fj2y1aVaeUX",
+  premium: "https://buy.stripe.com/14k2bnf256Oh0gwdQQ",
   call: "#book-call",
 };
 

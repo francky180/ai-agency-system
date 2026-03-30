@@ -34,7 +34,7 @@ export default function Navbar() {
       </div>
 
       <a
-        href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
+        href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
         className="rounded-full bg-accent px-5 py-2 text-xs font-semibold text-black transition-all hover:bg-accent-light"
       >
         Get Started

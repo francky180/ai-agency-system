@@ -88,7 +88,7 @@ export default function PremiumOffer() {
 
           {/* CTA */}
           <a
-            href="https://buy.stripe.com/3cI14n7Og2rn6g00Vhao804"
+            href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
             className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
           >
             Get the Full System — $1,500
