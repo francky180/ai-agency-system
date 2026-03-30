@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Agency System — Build & Run Your AI-Powered Agency",
+  title: "AI Agency System — Launch Your AI-Powered Agency Today",
   description:
-    "A complete AI-powered system to build, market, and scale your own agency. Website, marketing engine, automation workflows, and structured build process included.",
+    "The complete AI system to build, market, and scale a profitable agency. Website, marketing engine, automation, and strategy — all done for you.",
 };
 
 export default function RootLayout({

@@ -1,22 +1,18 @@
 import Hero from "@/components/Hero";
-import WhatThisIs from "@/components/WhatThisIs";
-import WhatYouGet from "@/components/WhatYouGet";
-import Process from "@/components/Process";
-import SystemComparison from "@/components/SystemComparison";
-import Trust from "@/components/Trust";
-import CTA from "@/components/CTA";
+import ThreeSteps from "@/components/ThreeSteps";
+import EntryOffer from "@/components/EntryOffer";
+import PremiumOffer from "@/components/PremiumOffer";
+import BookCall from "@/components/BookCall";
 import FinalCTA from "@/components/FinalCTA";
 
 export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
-      <WhatThisIs />
-      <WhatYouGet />
-      <Process />
-      <SystemComparison />
-      <Trust />
-      <CTA />
+      <ThreeSteps />
+      <EntryOffer />
+      <PremiumOffer />
+      <BookCall />
       <FinalCTA />
     </main>
   );
