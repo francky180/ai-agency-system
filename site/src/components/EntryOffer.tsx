@@ -3,12 +3,12 @@
 import { motion } from "motion/react";
 
 const features = [
-  "Premium agency website (Next.js + Tailwind)",
-  "AI marketing engine (SEO, copy, social, email)",
-  "Automation workflows for every task",
-  "Step-by-step setup guide",
-  "System status dashboard",
-  "Full documentation",
+  { text: "Premium agency website", detail: "Next.js + Tailwind, production-ready" },
+  { text: "AI marketing engine", detail: "SEO, copy, social, email, competitor intel" },
+  { text: "Automation workflows", detail: "Every task structured and repeatable" },
+  { text: "Step-by-step launch guide", detail: "Beginner-friendly, zero guesswork" },
+  { text: "System status dashboard", detail: "Live monitoring of all subsystems" },
+  { text: "Full documentation", detail: "Setup, config, and daily operations" },
 ];
 
 export default function EntryOffer() {
@@ -23,12 +23,12 @@ export default function EntryOffer() {
         transition={{ duration: 0.6 }}
         className="text-center mb-14"
       >
-        <p className="text-xs font-medium tracking-widest uppercase text-accent mb-4">Start Here</p>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-          Start with the core system.
+        <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">Start Here</p>
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
+          Get the core system.
         </h2>
         <p className="mt-4 max-w-lg mx-auto text-muted text-lg">
-          Everything you need to launch your AI-powered agency — at a fraction of what it would cost to build from scratch.
+          Everything you need to launch — at a fraction of what it costs to build from scratch.
         </p>
       </motion.div>
 
@@ -40,44 +40,47 @@ export default function EntryOffer() {
         className="w-full max-w-xl"
       >
         <div className="rounded-2xl border border-border bg-card p-10 sm:p-12">
-          {/* Price */}
-          <div className="flex items-baseline gap-2 mb-2">
-            <span className="text-5xl font-bold text-accent">$250</span>
-            <span className="text-sm text-muted">one-time</span>
+          {/* Price block */}
+          <div className="flex items-end gap-3 mb-1">
+            <span className="text-5xl font-bold text-accent tracking-tight">$250</span>
+            <span className="text-sm text-muted pb-1.5">one-time</span>
           </div>
-          <p className="text-sm text-muted mb-8">Instant access. No recurring fees.</p>
+          <p className="text-sm text-muted/70 mb-8">Instant access. No recurring fees. No upsell traps.</p>
 
-          {/* Divider */}
           <div className="h-px bg-border mb-8" />
 
-          {/* What's included */}
-          <p className="text-xs font-medium tracking-widest uppercase text-muted mb-5">What you get</p>
-          <ul className="space-y-4 mb-10">
+          {/* Features */}
+          <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-muted/70 mb-6">What&apos;s Included</p>
+          <ul className="space-y-5 mb-10">
             {features.map((f) => (
-              <li key={f} className="flex items-start gap-3 text-sm">
+              <li key={f.text} className="flex items-start gap-3">
                 <svg className="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
-                <span>{f}</span>
+                <div>
+                  <span className="text-sm font-medium">{f.text}</span>
+                  <span className="text-sm text-muted"> — {f.detail}</span>
+                </div>
               </li>
             ))}
           </ul>
 
           {/* Who it's for */}
-          <div className="rounded-xl bg-surface border border-border p-5 mb-10">
-            <p className="text-xs font-medium tracking-widest uppercase text-accent mb-3">Perfect for</p>
+          <div className="rounded-xl bg-accent/[0.04] border border-accent/10 p-5 mb-10">
+            <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-2">Built For</p>
             <p className="text-sm text-muted leading-relaxed">
-              Freelancers, solopreneurs, and consultants who want to launch an AI-powered agency quickly — without hiring a team or spending months building infrastructure.
+              Freelancers, solopreneurs, and consultants ready to launch an AI-powered agency — without hiring a team or spending months on infrastructure.
             </p>
           </div>
 
           {/* CTA */}
           <a
             href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
-            className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-semibold text-black transition-all hover:bg-accent-light hover:shadow-[0_0_40px_rgba(201,168,76,0.25)]"
+            className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.3)]"
           >
-            Get Access for $250
+            Get Access — $250
           </a>
+          <p className="mt-3 text-center text-[11px] text-muted/40">Secure checkout via Stripe</p>
         </div>
       </motion.div>
     </section>

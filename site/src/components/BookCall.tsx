@@ -17,31 +17,29 @@ export default function BookCall() {
         <div className="rounded-2xl border border-border bg-surface p-10 sm:p-14 text-center">
           {/* Exclusive badge */}
           <div className="mb-8">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border-light bg-card px-4 py-1.5 text-xs font-medium tracking-widest uppercase text-muted">
-              <svg className="h-3.5 w-3.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-              </svg>
-              By Application Only
+            <span className="inline-flex items-center gap-2 rounded-full border border-border-light bg-card px-4 py-1.5 text-[11px] font-semibold tracking-[0.12em] uppercase text-muted/70">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent/60" />
+              Limited Availability
             </span>
           </div>
 
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Need help scaling faster?
+            Want a custom implementation?
           </h2>
 
           <p className="mt-5 max-w-md mx-auto text-muted leading-relaxed">
-            If you are already running an agency or business and want a custom implementation —
-            a strategy call is the fastest path. We will map your goals, identify leverage points,
-            and build a plan to scale.
+            Already running an agency or business? Book a strategy call and
+            we will map your goals, identify the highest-leverage moves, and
+            build a custom plan to scale — fast.
           </p>
 
-          <p className="mt-4 text-sm text-muted/60">
-            Limited availability. Serious inquiries only.
+          <p className="mt-4 text-xs text-muted/40">
+            Serious inquiries only. Not a sales pitch — it is a working session.
           </p>
 
           <a
             href="#"
-            className="mt-8 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent-dim px-10 py-4 text-sm font-semibold text-accent-light transition-all hover:border-accent/60 hover:bg-accent/10 hover:shadow-[0_0_30px_rgba(201,168,76,0.15)]"
+            className="mt-8 inline-flex items-center gap-2.5 rounded-full border border-accent/25 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent tracking-wide transition-all hover:border-accent/50 hover:bg-accent/10 hover:shadow-[0_0_40px_rgba(201,168,76,0.12)]"
           >
             Book a Strategy Call
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
