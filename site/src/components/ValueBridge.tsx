@@ -3,17 +3,17 @@
 import { motion } from "motion/react";
 
 const comparisons = [
-  { task: "Agency website", old: "Hire a developer — $3,000+", you: "Built-in and ready" },
-  { task: "Marketing strategy", old: "Hire a consultant — $2,000+/mo", you: "AI engine included" },
-  { task: "SEO & content", old: "Agency retainer — $1,500+/mo", you: "Automated audits" },
-  { task: "Copywriting", old: "Freelancer — $500+ per project", you: "AI-generated on demand" },
-  { task: "Automation", old: "Custom dev — $5,000+", you: "Pre-built workflows" },
-  { task: "Client systems", old: "Months of setup", you: "Ready in 30 minutes" },
+  { task: "Agency website", old: "$3,000+", oldDetail: "Hire a developer", you: "Built-in and ready" },
+  { task: "Marketing strategy", old: "$2,000+/mo", oldDetail: "Hire a consultant", you: "AI engine included" },
+  { task: "SEO & content", old: "$1,500+/mo", oldDetail: "Agency retainer", you: "Automated audits" },
+  { task: "Copywriting", old: "$500+", oldDetail: "Per project freelancer", you: "AI-generated on demand" },
+  { task: "Automation", old: "$5,000+", oldDetail: "Custom development", you: "Pre-built workflows" },
+  { task: "Client systems", old: "Months", oldDetail: "Of manual setup", you: "Ready in 30 minutes" },
 ];
 
 export default function ValueBridge() {
   return (
-    <section className="relative px-6 py-28 flex flex-col items-center">
+    <section id="value" className="relative px-6 py-28 flex flex-col items-center">
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
 
       <motion.div
@@ -27,6 +27,9 @@ export default function ValueBridge() {
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
           Save $12,000+ on agency setup.
         </h2>
+        <p className="mt-4 max-w-lg mx-auto text-muted text-lg">
+          Everything agencies charge thousands for — included in one system.
+        </p>
       </motion.div>
 
       <motion.div
@@ -36,15 +39,14 @@ export default function ValueBridge() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="w-full max-w-3xl"
       >
-        <div className="overflow-hidden rounded-2xl border border-border">
-          {/* Header */}
+        {/* Desktop table */}
+        <div className="hidden sm:block overflow-hidden rounded-2xl border border-border">
           <div className="grid grid-cols-3 bg-card px-6 py-4 border-b border-border">
             <span className="text-[11px] font-semibold tracking-[0.12em] uppercase text-muted/60">Task</span>
             <span className="text-[11px] font-semibold tracking-[0.12em] uppercase text-muted/60">Traditional Cost</span>
             <span className="text-[11px] font-semibold tracking-[0.12em] uppercase text-accent">With This System</span>
           </div>
 
-          {/* Rows */}
           {comparisons.map((row, i) => (
             <div
               key={row.task}
@@ -53,16 +55,37 @@ export default function ValueBridge() {
               }`}
             >
               <span className="text-sm font-medium">{row.task}</span>
-              <span className="text-sm text-muted/60 line-through decoration-muted/30">{row.old}</span>
+              <span className="text-sm text-muted/60 line-through decoration-muted/30">{row.oldDetail} — {row.old}</span>
               <span className="text-sm font-medium text-accent">{row.you}</span>
             </div>
           ))}
 
-          {/* Total */}
           <div className="grid grid-cols-3 px-6 py-5 bg-accent/[0.04] border-t border-accent/10">
             <span className="text-sm font-bold">Total value</span>
             <span className="text-sm font-bold text-muted/60">$12,000+</span>
             <span className="text-sm font-bold text-accent">From $250</span>
+          </div>
+        </div>
+
+        {/* Mobile card layout */}
+        <div className="sm:hidden space-y-3">
+          {comparisons.map((row) => (
+            <div key={row.task} className="rounded-xl border border-border bg-card p-5">
+              <p className="text-sm font-medium mb-2">{row.task}</p>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-muted/60 line-through">{row.old}</span>
+                <span className="text-sm font-bold text-accent">{row.you}</span>
+              </div>
+            </div>
+          ))}
+          <div className="rounded-xl border border-accent/20 bg-accent/[0.04] p-5">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-bold">Total value</span>
+              <div className="text-right">
+                <span className="text-sm text-muted/60 line-through mr-3">$12,000+</span>
+                <span className="text-sm font-bold text-accent">From $250</span>
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>

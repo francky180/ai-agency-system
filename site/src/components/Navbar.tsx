@@ -38,6 +38,8 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-accent px-5 py-2 text-xs font-semibold text-black transition-all hover:bg-accent-light"
           >
             Launch Now
@@ -61,6 +63,15 @@ export default function Navbar() {
           <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="transition-colors hover:text-foreground">Process</a>
           <a href="#entry-offer" onClick={() => setMenuOpen(false)} className="transition-colors hover:text-foreground">Pricing</a>
           <a href="#book-call" onClick={() => setMenuOpen(false)} className="transition-colors hover:text-foreground">Contact</a>
+          <a
+            href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="text-accent font-bold transition-colors hover:text-accent-light"
+          >
+            Full System — $1,500
+          </a>
         </div>
       </div>
     </motion.nav>

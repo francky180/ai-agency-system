@@ -76,6 +76,8 @@ export default function EntryOffer() {
           {/* CTA */}
           <a
             href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.3)]"
           >
             Launch My Agency — $250

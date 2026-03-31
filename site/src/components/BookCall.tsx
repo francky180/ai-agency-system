@@ -41,7 +41,7 @@ export default function BookCall() {
             href="mailto:hello@aiagencysystem.com?subject=Strategy%20Call%20Request&body=Hi%2C%20I%27d%20like%20to%20book%20a%20strategy%20call.%20Here%27s%20a%20bit%20about%20my%20business%3A%0A%0A"
             className="mt-8 inline-flex items-center gap-2.5 rounded-full border border-accent/25 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent tracking-wide transition-all hover:border-accent/50 hover:bg-accent/10 hover:shadow-[0_0_40px_rgba(201,168,76,0.12)]"
           >
-            Book a Strategy Call
+            Book a Free Strategy Call
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>

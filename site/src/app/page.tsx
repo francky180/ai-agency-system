@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
 import ThreeSteps from "@/components/ThreeSteps";
-import EntryOffer from "@/components/EntryOffer";
 import ValueBridge from "@/components/ValueBridge";
+import EntryOffer from "@/components/EntryOffer";
 import PremiumOffer from "@/components/PremiumOffer";
 import BookCall from "@/components/BookCall";
 import FAQ from "@/components/FAQ";
@@ -17,8 +17,8 @@ export default function Home() {
         <Hero />
         <SocialProof />
         <ThreeSteps />
-        <EntryOffer />
         <ValueBridge />
+        <EntryOffer />
         <PremiumOffer />
         <BookCall />
         <FAQ />

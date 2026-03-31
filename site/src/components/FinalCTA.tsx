@@ -29,17 +29,28 @@ export default function FinalCTA() {
         <div className="mt-10 flex flex-col items-center gap-4 w-full sm:flex-row sm:justify-center">
           <a
             href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
           >
             Launch My Agency — $250
           </a>
           <a
             href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent-light tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
           >
             Get Done-For-You — $1,500
           </a>
         </div>
+
+        <a
+          href="#book-call"
+          className="mt-4 text-sm text-muted/60 underline underline-offset-4 decoration-muted/20 transition-colors hover:text-accent hover:decoration-accent/40"
+        >
+          Or book a free strategy call
+        </a>
 
         <p className="mt-8 text-[11px] text-muted/40 tracking-wide">
           One-time payment &middot; Instant access &middot; Secure Stripe checkout
