@@ -5,20 +5,20 @@ import { motion } from "motion/react";
 const coreLine = "Everything in the Core System ($250 value)";
 
 const premiumFeatures = [
-  { text: "Done-for-you agency structure", detail: "Branding, positioning, offer stack" },
-  { text: "Advanced marketing campaigns", detail: "Multi-channel strategy, ready to deploy" },
+  { text: "Custom branding & positioning", detail: "Your unique brand, built to attract ideal clients" },
+  { text: "Advanced marketing campaigns", detail: "Multi-channel strategy, deployed and ready" },
   { text: "Custom automation workflows", detail: "Tailored to your niche and service model" },
-  { text: "Priority support & onboarding", detail: "Direct access, fast responses" },
+  { text: "Priority support & onboarding", detail: "Direct access, hands-on guidance" },
   { text: "Revenue optimization playbook", detail: "Pricing, packaging, and closing frameworks" },
-  { text: "Deployment & launch assistance", detail: "We help you go live" },
+  { text: "Full deployment assistance", detail: "We launch it with you, not just for you" },
 ];
 
 export default function PremiumOffer() {
   return (
     <section id="premium-offer" className="relative px-6 py-28 flex flex-col items-center">
       {/* Ambient glow */}
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-accent/[0.06] blur-[160px]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-accent/[0.04] blur-[160px]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
@@ -27,12 +27,12 @@ export default function PremiumOffer() {
         transition={{ duration: 0.6 }}
         className="relative z-10 text-center mb-14"
       >
-        <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">Maximum Impact</p>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
-          The full system. Done for you.
+        <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">Maximum Results</p>
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] text-foreground">
+          We build it all. You close clients.
         </h2>
         <p className="mt-4 max-w-lg mx-auto text-muted text-lg">
-          For those who want everything built, configured, and optimized — ready to generate revenue from day one.
+          For those who want everything done — custom branding, campaigns deployed, and revenue systems ready from day one.
         </p>
       </motion.div>
 
@@ -43,7 +43,7 @@ export default function PremiumOffer() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="relative z-10 w-full max-w-xl"
       >
-        <div className="rounded-2xl border border-accent/25 bg-card p-10 sm:p-12 shadow-[0_0_100px_rgba(201,168,76,0.05)]">
+        <div className="rounded-2xl border border-accent/25 bg-card p-10 sm:p-12 shadow-md">
           {/* Badge */}
           <div className="mb-6">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 border border-accent/20 px-4 py-1.5 text-[11px] font-bold tracking-[0.1em] uppercase text-accent">
@@ -79,7 +79,7 @@ export default function PremiumOffer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
                 <div>
-                  <span className="text-sm font-medium">{f.text}</span>
+                  <span className="text-sm font-medium text-foreground">{f.text}</span>
                   <span className="text-sm text-muted"> — {f.detail}</span>
                 </div>
               </li>
@@ -91,9 +91,9 @@ export default function PremiumOffer() {
             href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
+            className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-white tracking-wide transition-all hover:bg-accent-light hover:shadow-lg"
           >
-            Build My Agency For Me — $1,500
+            Get My System Built — $1,500
           </a>
           <p className="mt-3 text-center text-[11px] text-muted/40">Secure checkout via Stripe</p>
         </div>

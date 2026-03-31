@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Agency System — Launch Your AI-Powered Agency in 30 Minutes",
+  title: "Get Clients in 7–14 Days — Done-For-You Client Acquisition System",
   description:
-    "The complete done-for-you AI agency system. Premium website, marketing engine, automation workflows, and client acquisition — all included. One payment, lifetime access. From $250.",
+    "We build your entire client acquisition system — website, marketing engine, automation, and strategy. Get consistent clients without ads or cold calling. One payment, lifetime access.",
 };
 
 export default function RootLayout({

@@ -11,10 +11,9 @@ const LINKS = {
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-28 pb-20">
-      {/* Background effects */}
+      {/* Background effects — warm subtle glow */}
       <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[800px] w-[800px] rounded-full bg-accent/[0.04] blur-[180px]" />
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[300px] w-[300px] rounded-full bg-accent/[0.08] blur-[100px]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -25,21 +24,20 @@ export default function Hero() {
         {/* Badge */}
         <span className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-accent/20 bg-accent/[0.06] px-5 py-2 text-[11px] font-semibold tracking-[0.15em] uppercase text-accent">
           <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-          AI-Powered Agency Infrastructure
+          Done-For-You Client Acquisition
         </span>
 
         {/* Headline */}
-        <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-[-0.02em] sm:text-[3.75rem] lg:text-[4.5rem]">
-          Your AI agency.
+        <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-[-0.02em] sm:text-[3.75rem] lg:text-[4.5rem] text-foreground">
+          Get clients in 7–14 days
           <br />
-          <span className="text-accent">Built and ready to sell.</span>
+          <span className="text-accent">without ads or cold calling.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-          Premium website, AI marketing engine, automation workflows, and client
-          acquisition strategy — all done for you. One payment. Launch in 30 minutes.
-          Start closing clients today.
+          We build your entire client acquisition system for you — website, marketing
+          engine, automation, and strategy. So you can focus on closing, not chasing.
         </p>
 
         {/* CTA Stack */}
@@ -53,23 +51,23 @@ export default function Hero() {
             href={LINKS.entry}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
+            className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-white tracking-wide transition-all hover:bg-accent-light hover:shadow-lg"
           >
-            Launch My Agency — $250
+            Get My System Built — $250
           </a>
           <a
             href={LINKS.premium}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent-light tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
+            className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
           >
-            Get Done-For-You — $1,500
+            Full Done-For-You — $1,500
           </a>
           <a
             href={LINKS.call}
-            className="w-full sm:w-auto rounded-full border border-border-light px-10 py-4 text-sm font-semibold text-muted tracking-wide transition-all hover:border-muted hover:text-foreground"
+            className="w-full sm:w-auto rounded-full border border-border px-10 py-4 text-sm font-semibold text-muted tracking-wide transition-all hover:border-muted hover:text-foreground"
           >
-            Book a Free Strategy Call
+            Book Free Strategy Call
           </a>
         </motion.div>
 
@@ -78,14 +76,14 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-muted/50 tracking-wide"
+          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-muted/60 tracking-wide"
         >
           <span>One-time payment</span>
-          <span className="hidden sm:inline text-border-light">|</span>
+          <span className="hidden sm:inline text-border">|</span>
           <span>Instant access</span>
-          <span className="hidden sm:inline text-border-light">|</span>
+          <span className="hidden sm:inline text-border">|</span>
           <span>Secure Stripe checkout</span>
-          <span className="hidden sm:inline text-border-light">|</span>
+          <span className="hidden sm:inline text-border">|</span>
           <span>No subscriptions</span>
         </motion.div>
       </motion.div>

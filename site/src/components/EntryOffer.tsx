@@ -3,18 +3,18 @@
 import { motion } from "motion/react";
 
 const features = [
-  { text: "Premium agency website", detail: "Next.js + Tailwind, production-ready" },
-  { text: "AI marketing engine", detail: "SEO, copy, social, email, competitor intel" },
-  { text: "Automation workflows", detail: "Every task structured and repeatable" },
-  { text: "Step-by-step launch guide", detail: "Beginner-friendly, zero guesswork" },
-  { text: "System status dashboard", detail: "Live monitoring of all subsystems" },
-  { text: "Full documentation", detail: "Setup, config, and daily operations" },
+  { text: "Client-ready website", detail: "Premium design, built to convert visitors into leads" },
+  { text: "AI marketing engine", detail: "SEO, copy, social, email — all automated" },
+  { text: "Automation workflows", detail: "Lead capture to follow-up, fully structured" },
+  { text: "Client acquisition strategy", detail: "Proven frameworks to land your first clients" },
+  { text: "System dashboard", detail: "Monitor everything from one place" },
+  { text: "Complete documentation", detail: "Step-by-step setup, zero guesswork" },
 ];
 
 export default function EntryOffer() {
   return (
     <section id="entry-offer" className="relative px-6 py-28 flex flex-col items-center">
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
@@ -24,11 +24,11 @@ export default function EntryOffer() {
         className="text-center mb-14"
       >
         <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">Start Here</p>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
-          Get the core system.
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] text-foreground">
+          Your client acquisition system.
         </h2>
         <p className="mt-4 max-w-lg mx-auto text-muted text-lg">
-          Everything you need to launch — at a fraction of what it costs to build from scratch.
+          Everything you need to start getting clients — for less than a single freelancer invoice.
         </p>
       </motion.div>
 
@@ -39,7 +39,7 @@ export default function EntryOffer() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="w-full max-w-xl"
       >
-        <div className="rounded-2xl border border-border bg-card p-10 sm:p-12">
+        <div className="rounded-2xl border border-border bg-card p-10 sm:p-12 shadow-sm">
           {/* Price block */}
           <div className="flex items-end gap-3 mb-1">
             <span className="text-5xl font-bold text-accent tracking-tight">$250</span>
@@ -58,7 +58,7 @@ export default function EntryOffer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
                 <div>
-                  <span className="text-sm font-medium">{f.text}</span>
+                  <span className="text-sm font-medium text-foreground">{f.text}</span>
                   <span className="text-sm text-muted"> — {f.detail}</span>
                 </div>
               </li>
@@ -69,7 +69,7 @@ export default function EntryOffer() {
           <div className="rounded-xl bg-accent/[0.04] border border-accent/10 p-5 mb-10">
             <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-2">Built For</p>
             <p className="text-sm text-muted leading-relaxed">
-              Freelancers, solopreneurs, and consultants ready to launch an AI-powered agency — without hiring a team or spending months on infrastructure.
+              Freelancers, agencies, and consultants who want a proven system to acquire clients — without hiring a team or spending months figuring it out.
             </p>
           </div>
 
@@ -78,9 +78,9 @@ export default function EntryOffer() {
             href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.3)]"
+            className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-white tracking-wide transition-all hover:bg-accent-light hover:shadow-lg"
           >
-            Launch My Agency — $250
+            Get My System Built — $250
           </a>
           <p className="mt-3 text-center text-[11px] text-muted/40">Secure checkout via Stripe</p>
         </div>

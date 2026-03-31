@@ -6,31 +6,31 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What exactly do I get?",
-    a: "A complete AI agency system — premium website (Next.js), AI marketing engine (SEO, copy, social, email, competitor analysis), automation workflows, system status dashboard, and a step-by-step launch guide. Everything is built, tested, and production-ready.",
+    a: "A complete client acquisition system — premium website built to convert, AI marketing engine (SEO, copy, social, email, competitor analysis), automation workflows, and a step-by-step strategy to start landing clients. Everything is production-ready.",
+  },
+  {
+    q: "How fast will I start getting clients?",
+    a: "Most users have their system live within a day. With the marketing engine and outreach strategy included, you can start generating leads within 7–14 days. The speed depends on your niche and how quickly you deploy.",
   },
   {
     q: "Do I need technical skills?",
-    a: "Basic comfort with a computer is enough. The guide walks you through every step — installing tools, running the system, and verifying it works. If you can follow instructions, you can launch.",
+    a: "No. Basic comfort with a computer is enough. The guide walks you through every step. If you can follow instructions, you can launch your system.",
   },
   {
     q: "What is the difference between $250 and $1,500?",
-    a: "The $250 Core System gives you the complete infrastructure to launch on your own. The $1,500 Full System includes everything in Core plus done-for-you branding, advanced marketing campaigns, custom automation, priority support, and deployment assistance.",
+    a: "The $250 Core System gives you the complete infrastructure to launch on your own. The $1,500 Done-For-You includes everything in Core plus custom branding, deployed campaigns, tailored automation, priority support, and hands-on launch assistance.",
   },
   {
     q: "Is this a subscription?",
-    a: "No. One-time payment, lifetime access. No monthly fees, no hidden charges, no upsell traps.",
+    a: "No. One-time payment, lifetime access. No monthly fees, no hidden charges, no upsell traps. You own the system.",
   },
   {
-    q: "How fast can I launch?",
-    a: "Most people go from purchase to running system in under 30 minutes. From there, you can start closing clients the same day.",
-  },
-  {
-    q: "Can I customize the website?",
-    a: "Yes. Everything is modular. Swap colors, update copy, add sections, change branding — the code is clean and well-documented. It is your system to own and modify.",
+    q: "Can I customize it for my niche?",
+    a: "Yes. Everything is modular — swap colors, update copy, add sections, change branding. The code is clean and well-documented. With the $1,500 plan, we customize it for you.",
   },
   {
     q: "What if I get stuck?",
-    a: "The Core System includes full documentation and a step-by-step launch guide. The Full System ($1,500) also includes priority support and direct onboarding — we help you get up and running personally.",
+    a: "The Core System includes full documentation and a launch guide. The Done-For-You plan ($1,500) includes priority support and direct onboarding — we help you get running personally.",
   },
 ];
 
@@ -43,7 +43,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         onClick={() => setOpen(!open)}
         className="flex w-full items-center justify-between py-5 text-left"
       >
-        <span className="text-sm font-medium pr-4">{q}</span>
+        <span className="text-sm font-medium pr-4 text-foreground">{q}</span>
         <svg
           className={`h-4 w-4 shrink-0 text-muted transition-transform duration-200 ${open ? "rotate-45" : ""}`}
           fill="none"
@@ -68,7 +68,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function FAQ() {
   return (
     <section className="relative px-6 py-28 flex flex-col items-center">
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
@@ -78,8 +78,8 @@ export default function FAQ() {
         className="text-center mb-14"
       >
         <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">Questions</p>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
-          Common questions.
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] text-foreground">
+          Frequently asked questions.
         </h2>
       </motion.div>
 
