@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "motion/react";
+import { LINKS } from "@/lib/links";
 
 export default function FinalCTA() {
   return (
-    <section className="relative px-6 py-32 flex flex-col items-center overflow-hidden">
+    <section className="relative px-6 pt-32 pb-16 flex flex-col items-center overflow-hidden">
       {/* Ambient glow */}
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[700px] w-[700px] rounded-full bg-accent/[0.04] blur-[180px]" />
+      <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[700px] w-[700px] rounded-full bg-accent/[0.06] blur-[200px]" />
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
@@ -18,25 +19,25 @@ export default function FinalCTA() {
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[3rem] leading-[1.1] text-foreground">
           Stop chasing clients.
           <br />
-          <span className="text-accent">Start attracting them.</span>
+          <span className="text-accent">Start closing them.</span>
         </h2>
 
         <p className="mt-6 text-lg text-muted leading-relaxed">
           Your system is ready to be built. One payment. Lifetime access.
-          Clients in 7–14 days.
+          Leads in 7–14 days.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 w-full sm:flex-row sm:justify-center">
           <a
-            href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
+            href={LINKS.entry}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-white tracking-wide transition-all hover:bg-accent-light hover:shadow-lg"
+            className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-background tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_30px_rgba(201,168,76,0.25)]"
           >
-            Get My System Built — $250
+            Launch My System — $250
           </a>
           <a
-            href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
+            href={LINKS.premium}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
@@ -47,21 +48,40 @@ export default function FinalCTA() {
 
         <a
           href="#book-call"
-          className="mt-4 text-sm text-muted/60 underline underline-offset-4 decoration-muted/20 transition-colors hover:text-accent hover:decoration-accent/40"
+          className="mt-4 inline-block text-sm text-muted-dim underline underline-offset-4 decoration-muted-dim/20 transition-colors hover:text-accent hover:decoration-accent/40"
         >
           Or book a free strategy call
         </a>
 
-        <p className="mt-8 text-[11px] text-muted/40 tracking-wide">
+        <p className="mt-8 text-[11px] text-muted-dim tracking-wide">
           One-time payment &middot; Instant access &middot; Secure Stripe checkout
         </p>
       </motion.div>
 
       {/* Footer */}
-      <div className="relative z-10 mt-20 pt-8 border-t border-border w-full max-w-xl text-center">
-        <p className="text-xs text-muted/40">
-          &copy; {new Date().getFullYear()} ClientFlow. Built for freelancers, agencies, and consultants.
-        </p>
+      <div className="relative z-10 mt-24 pt-8 border-t border-border w-full max-w-5xl">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8">
+          <div className="flex flex-col items-center sm:items-start gap-2">
+            <span className="text-sm font-bold tracking-tight text-foreground">
+              Client<span className="text-accent">Flow</span>
+            </span>
+            <p className="text-xs text-muted-dim">
+              Client acquisition systems for freelancers, agencies, and consultants.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-6 text-xs text-muted-dim">
+            <a href="#how-it-works" className="transition-colors hover:text-foreground">How It Works</a>
+            <a href="#pricing" className="transition-colors hover:text-foreground">Pricing</a>
+            <a href="#book-call" className="transition-colors hover:text-foreground">Contact</a>
+          </div>
+        </div>
+
+        <div className="border-t border-border pt-6 pb-20 sm:pb-6 text-center">
+          <p className="text-[11px] text-muted-dim/60">
+            &copy; {new Date().getFullYear()} ClientFlow. All rights reserved.
+          </p>
+        </div>
       </div>
     </section>
   );

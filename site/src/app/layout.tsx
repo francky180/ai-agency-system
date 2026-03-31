@@ -13,9 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Get Clients in 7–14 Days — Done-For-You Client Acquisition System",
+  title: "ClientFlow — Done-For-You Client Acquisition System",
   description:
-    "We build your entire client acquisition system — website, marketing engine, automation, and strategy. Get consistent clients without ads or cold calling. One payment, lifetime access.",
+    "We build your entire client acquisition system — website, marketing engine, automation, and strategy. One payment, lifetime access. Start getting clients in 7–14 days.",
+  openGraph: {
+    title: "ClientFlow — Done-For-You Client Acquisition System",
+    description:
+      "Website. Marketing engine. Automation. Outreach playbook. All built and deployed for you. One payment, lifetime access.",
+    type: "website",
+    locale: "en_US",
+    siteName: "ClientFlow",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ClientFlow — Done-For-You Client Acquisition System",
+    description:
+      "We build your entire client acquisition system. Website, marketing engine, automation, outreach. One payment, lifetime access.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

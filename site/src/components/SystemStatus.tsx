@@ -20,11 +20,11 @@ export default function SystemStatus() {
         transition={{ duration: 0.5 }}
         className="mb-8 text-center"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-sm text-emerald-400">
-          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+        <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm text-accent">
+          <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
           All systems operational
         </div>
-        <h1 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
           Your system is fully ready
         </h1>
         <p className="mt-3 text-muted">
@@ -41,10 +41,10 @@ export default function SystemStatus() {
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-border bg-card">
-              <th className="px-6 py-4 font-semibold">Capability</th>
+              <th className="px-6 py-4 font-semibold text-foreground">Capability</th>
               <th className="px-6 py-4 font-semibold text-muted">Most People</th>
-              <th className="px-6 py-4 font-semibold text-accent-light">You</th>
-              <th className="px-6 py-4 font-semibold text-right">Status</th>
+              <th className="px-6 py-4 font-semibold text-accent">You</th>
+              <th className="px-6 py-4 font-semibold text-right text-foreground">Status</th>
             </tr>
           </thead>
           <tbody>
@@ -53,12 +53,12 @@ export default function SystemStatus() {
                 key={row.capability}
                 className={i < rows.length - 1 ? "border-b border-border" : ""}
               >
-                <td className="px-6 py-4 font-medium">{row.capability}</td>
+                <td className="px-6 py-4 font-medium text-foreground">{row.capability}</td>
                 <td className="px-6 py-4 text-muted">{row.others}</td>
-                <td className="px-6 py-4 text-accent-light">{row.you}</td>
+                <td className="px-6 py-4 text-accent">{row.you}</td>
                 <td className="px-6 py-4 text-right">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
                     Active
                   </span>
                 </td>

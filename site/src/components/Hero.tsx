@@ -1,19 +1,15 @@
 "use client";
 
 import { motion } from "motion/react";
-
-const LINKS = {
-  entry: "https://buy.stripe.com/00g8zL2fj2y1aVaeUX",
-  premium: "https://buy.stripe.com/14k2bnf256Oh0gwdQQ",
-  call: "#book-call",
-};
+import { LINKS } from "@/lib/links";
 
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-28 pb-20">
-      {/* Background effects — warm subtle glow */}
-      <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[800px] w-[800px] rounded-full bg-accent/[0.04] blur-[180px]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      {/* Background grid + glow */}
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(201,168,76,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(201,168,76,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-accent/[0.06] blur-[200px]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -28,19 +24,19 @@ export default function Hero() {
         </span>
 
         {/* Headline */}
-        <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-[-0.02em] sm:text-[3.75rem] lg:text-[4.5rem] text-foreground">
-          Get clients in 7–14 days
+        <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-[-0.03em] sm:text-[3.75rem] lg:text-[4.5rem] text-foreground">
+          Your entire client pipeline,
           <br />
-          <span className="text-accent">without ads or cold calling.</span>
+          <span className="text-accent">built and deployed for you.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-          We build your entire client acquisition system for you — website, marketing
-          engine, automation, and strategy. So you can focus on closing, not chasing.
+          We set up your website, marketing engine, automation workflows, and outreach playbook.
+          You focus on closing deals — the system handles lead generation.
         </p>
 
-        {/* CTA Stack */}
+        {/* Primary CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,9 +47,9 @@ export default function Hero() {
             href={LINKS.entry}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-white tracking-wide transition-all hover:bg-accent-light hover:shadow-lg"
+            className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-background tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_30px_rgba(201,168,76,0.25)]"
           >
-            Get My System Built — $250
+            Launch My System — $250
           </a>
           <a
             href={LINKS.premium}
@@ -63,12 +59,6 @@ export default function Hero() {
           >
             Full Done-For-You — $1,500
           </a>
-          <a
-            href={LINKS.call}
-            className="w-full sm:w-auto rounded-full border border-border px-10 py-4 text-sm font-semibold text-muted tracking-wide transition-all hover:border-muted hover:text-foreground"
-          >
-            Book Free Strategy Call
-          </a>
         </motion.div>
 
         {/* Trust bar */}
@@ -76,15 +66,22 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-muted/60 tracking-wide"
+          className="mt-10 flex flex-col items-center gap-5"
         >
-          <span>One-time payment</span>
-          <span className="hidden sm:inline text-border">|</span>
-          <span>Instant access</span>
-          <span className="hidden sm:inline text-border">|</span>
-          <span>Secure Stripe checkout</span>
-          <span className="hidden sm:inline text-border">|</span>
-          <span>No subscriptions</span>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-muted-dim tracking-wide">
+            <span>One-time payment</span>
+            <span className="hidden sm:inline text-border-light">|</span>
+            <span>Instant access</span>
+            <span className="hidden sm:inline text-border-light">|</span>
+            <span>Secure Stripe checkout</span>
+            <span className="hidden sm:inline text-border-light">|</span>
+            <span>No subscriptions ever</span>
+          </div>
+
+          {/* Built for line */}
+          <p className="text-[11px] text-muted-dim/50 tracking-wide">
+            Built for freelancers, consultants, and agencies doing $0–$500K/yr
+          </p>
         </motion.div>
       </motion.div>
     </section>

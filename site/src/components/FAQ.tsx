@@ -5,32 +5,32 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "What exactly do I get?",
-    a: "A complete client acquisition system — premium website built to convert, AI marketing engine (SEO, copy, social, email, competitor analysis), automation workflows, and a step-by-step strategy to start landing clients. Everything is production-ready.",
+    q: "What exactly do I get for $250?",
+    a: "A production-ready client acquisition system: custom-designed website, AI marketing engine (SEO audits, copy generation, social content, email sequences, competitor analysis), automation workflows, outreach playbook with scripts and KPIs, system dashboard, and step-by-step documentation. Everything is deployed and ready to use.",
   },
   {
-    q: "How fast will I start getting clients?",
-    a: "Most users have their system live within a day. With the marketing engine and outreach strategy included, you can start generating leads within 7–14 days. The speed depends on your niche and how quickly you deploy.",
+    q: "How realistic is the 7–14 day timeline?",
+    a: "Your system is live within 24 hours. The 7–14 day timeline refers to generating your first inbound leads using the included outreach strategy. The actual speed depends on your niche and how consistently you execute the playbook. Some clients see results faster, some take a few weeks.",
   },
   {
-    q: "Do I need technical skills?",
-    a: "No. Basic comfort with a computer is enough. The guide walks you through every step. If you can follow instructions, you can launch your system.",
+    q: "Do I need to be technical?",
+    a: "No. If you can follow written instructions, you can launch this system. The documentation walks through every step. The $1,500 plan includes hands-on setup where we do it with you.",
   },
   {
-    q: "What is the difference between $250 and $1,500?",
-    a: "The $250 Core System gives you the complete infrastructure to launch on your own. The $1,500 Done-For-You includes everything in Core plus custom branding, deployed campaigns, tailored automation, priority support, and hands-on launch assistance.",
+    q: "What's the difference between Core ($250) and Done-For-You ($1,500)?",
+    a: "Core gives you the complete system to launch yourself — all tools, all documentation. Done-For-You includes everything in Core, plus: custom branding, deployed marketing campaigns, tailored automation, priority support, revenue optimization playbook, and full deployment assistance. We launch it with you, not just for you.",
   },
   {
-    q: "Is this a subscription?",
-    a: "No. One-time payment, lifetime access. No monthly fees, no hidden charges, no upsell traps. You own the system.",
+    q: "Is there a monthly subscription?",
+    a: "No. One payment, lifetime access. You own the entire system — code, content, documentation, everything. No hidden fees, no renewals, no upsell traps.",
   },
   {
-    q: "Can I customize it for my niche?",
-    a: "Yes. Everything is modular — swap colors, update copy, add sections, change branding. The code is clean and well-documented. With the $1,500 plan, we customize it for you.",
+    q: "Can I customize this for my specific niche?",
+    a: "Yes. The system is built to be modular — update copy, swap colors, add sections, change branding. The code is clean and documented. With the $1,500 plan, we customize everything to your niche and ideal client profile before launch.",
   },
   {
-    q: "What if I get stuck?",
-    a: "The Core System includes full documentation and a launch guide. The Done-For-You plan ($1,500) includes priority support and direct onboarding — we help you get running personally.",
+    q: "What if I need help after purchasing?",
+    a: "Core includes full documentation and a detailed launch guide. Done-For-You ($1,500) includes priority support — direct access to the team for onboarding, troubleshooting, and optimization guidance.",
   },
 ];
 
@@ -68,7 +68,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function FAQ() {
   return (
     <section className="relative px-6 py-28 flex flex-col items-center">
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-light to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
@@ -79,7 +79,7 @@ export default function FAQ() {
       >
         <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">Questions</p>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] text-foreground">
-          Frequently asked questions.
+          Common questions, straight answers.
         </h2>
       </motion.div>
 

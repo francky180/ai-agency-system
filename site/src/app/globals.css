@@ -1,24 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafaf8;
-  --foreground: #1a1a1a;
-  --muted: #6b7280;
-  --accent: #b8941f;
-  --accent-light: #d4ad2e;
-  --accent-dim: rgba(184, 148, 31, 0.06);
-  --accent-glow: rgba(184, 148, 31, 0.12);
-  --border: #e5e5e0;
-  --border-light: #ebebeb;
-  --card: #ffffff;
-  --card-hover: #fafafa;
-  --surface: #f5f5f0;
+  --background: #09090b;
+  --background-light: #111113;
+  --foreground: #fafafa;
+  --muted: #a1a1aa;
+  --muted-dim: #71717a;
+  --accent: #c9a84c;
+  --accent-light: #d4b85e;
+  --accent-dim: rgba(201, 168, 76, 0.08);
+  --accent-glow: rgba(201, 168, 76, 0.15);
+  --border: #1f1f23;
+  --border-light: #27272a;
+  --card: #111113;
+  --card-hover: #18181b;
+  --surface: #0f0f12;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-light: var(--background-light);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-muted-dim: var(--muted-dim);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-dim: var(--accent-dim);
@@ -40,7 +44,7 @@ body {
 
 ::selection {
   background: var(--accent);
-  color: #ffffff;
+  color: #09090b;
 }
 
 html {
@@ -59,4 +63,13 @@ html {
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2%, -2%); }
+  30% { transform: translate(1%, -1%); }
+  50% { transform: translate(-1%, 2%); }
+  70% { transform: translate(3%, 1%); }
+  90% { transform: translate(1%, -2%); }
 }
