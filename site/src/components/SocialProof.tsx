@@ -3,10 +3,10 @@
 import { motion } from "motion/react";
 
 const stats = [
-  { value: "100%", label: "AI-Powered", sub: "No manual bottlenecks" },
+  { value: "100%", label: "AI-Powered", sub: "Zero manual bottlenecks" },
   { value: "6", label: "Core Systems", sub: "Website, marketing, automation & more" },
-  { value: "$0", label: "Monthly Fees", sub: "One-time payment, lifetime access" },
-  { value: "30min", label: "To Launch", sub: "From purchase to running agency" },
+  { value: "$0/mo", label: "Forever", sub: "One-time payment, lifetime access" },
+  { value: "<30m", label: "To Launch", sub: "Purchase to live agency" },
 ];
 
 export default function SocialProof() {

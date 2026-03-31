@@ -30,16 +30,16 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-[2.75rem] font-bold leading-[1.08] tracking-[-0.02em] sm:text-[3.75rem] lg:text-[4.5rem]">
-          Launch a six-figure agency
+          Your AI agency.
           <br />
-          <span className="text-accent">in days, not months.</span>
+          <span className="text-accent">Built and ready to sell.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-          The complete done-for-you system — premium website, AI marketing engine,
-          automation workflows, and client acquisition strategy.
-          Stop building from scratch. Start closing clients.
+          Premium website, AI marketing engine, automation workflows, and client
+          acquisition strategy — all done for you. One payment. Launch in 30 minutes.
+          Start closing clients today.
         </p>
 
         {/* CTA Stack */}
@@ -53,19 +53,19 @@ export default function Hero() {
             href={LINKS.entry}
             className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
           >
-            Get Started — $250
+            Launch My Agency — $250
           </a>
           <a
             href={LINKS.premium}
             className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent-light tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
           >
-            Full System — $1,500
+            Get Done-For-You — $1,500
           </a>
           <a
             href={LINKS.call}
             className="w-full sm:w-auto rounded-full border border-border-light px-10 py-4 text-sm font-semibold text-muted tracking-wide transition-all hover:border-muted hover:text-foreground"
           >
-            Book a Call
+            Book a Free Strategy Call
           </a>
         </motion.div>
 

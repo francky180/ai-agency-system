@@ -78,7 +78,7 @@ export default function EntryOffer() {
             href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
             className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.3)]"
           >
-            Get Access — $250
+            Launch My Agency — $250
           </a>
           <p className="mt-3 text-center text-[11px] text-muted/40">Secure checkout via Stripe</p>
         </div>

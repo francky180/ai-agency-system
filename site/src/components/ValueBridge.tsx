@@ -25,7 +25,7 @@ export default function ValueBridge() {
       >
         <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-accent mb-4">The Real Cost</p>
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
-          What you would pay without this system.
+          Save $12,000+ on agency setup.
         </h2>
       </motion.div>
 

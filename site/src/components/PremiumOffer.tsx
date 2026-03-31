@@ -91,7 +91,7 @@ export default function PremiumOffer() {
             href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
             className="flex w-full items-center justify-center rounded-full bg-accent py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
           >
-            Get the Full System — $1,500
+            Build My Agency For Me — $1,500
           </a>
           <p className="mt-3 text-center text-[11px] text-muted/40">Secure checkout via Stripe</p>
         </div>

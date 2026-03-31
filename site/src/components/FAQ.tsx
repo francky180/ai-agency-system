@@ -28,6 +28,10 @@ const faqs = [
     q: "Can I customize the website?",
     a: "Yes. Everything is modular. Swap colors, update copy, add sections, change branding — the code is clean and well-documented. It is your system to own and modify.",
   },
+  {
+    q: "What if I get stuck?",
+    a: "The Core System includes full documentation and a step-by-step launch guide. The Full System ($1,500) also includes priority support and direct onboarding — we help you get up and running personally.",
+  },
 ];
 
 function FAQItem({ q, a }: { q: string; a: string }) {

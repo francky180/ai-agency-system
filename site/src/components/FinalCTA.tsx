@@ -16,14 +16,14 @@ export default function FinalCTA() {
         className="relative z-10 max-w-xl text-center"
       >
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-[3rem] leading-[1.1]">
-          Stop building from scratch.
+          Your competitors are already using AI.
           <br />
-          <span className="text-accent">Start closing clients.</span>
+          <span className="text-accent">Are you?</span>
         </h2>
 
         <p className="mt-6 text-lg text-muted leading-relaxed">
           The system is built. The infrastructure is ready.
-          Every day you wait is a day your competitors move forward.
+          One payment. Lifetime access. Launch in 30 minutes.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 w-full sm:flex-row sm:justify-center">
@@ -31,13 +31,13 @@ export default function FinalCTA() {
             href="https://buy.stripe.com/00g8zL2fj2y1aVaeUX"
             className="w-full sm:w-auto rounded-full bg-accent px-10 py-4 text-sm font-bold text-black tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_50px_rgba(201,168,76,0.35)]"
           >
-            Get Started — $250
+            Launch My Agency — $250
           </a>
           <a
             href="https://buy.stripe.com/14k2bnf256Oh0gwdQQ"
             className="w-full sm:w-auto rounded-full border border-accent/30 bg-accent/[0.06] px-10 py-4 text-sm font-bold text-accent-light tracking-wide transition-all hover:border-accent/60 hover:bg-accent/10"
           >
-            Full System — $1,500
+            Get Done-For-You — $1,500
           </a>
         </div>
 
