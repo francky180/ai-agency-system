@@ -56,7 +56,9 @@ export default function BookCall() {
 
           {/* CTA */}
           <a
-            href={LINKS.email}
+            href={LINKS.booking}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-accent px-10 py-4 text-sm font-bold text-background tracking-wide transition-all hover:bg-accent-light hover:shadow-[0_0_30px_rgba(201,168,76,0.2)]"
           >
             Book Free Strategy Call

@@ -1,0 +1,41 @@
+AI AGENCY SYSTEM — Client Acquisition Package
+================================================
+
+WHAT THIS IS:
+A complete, production-ready AI-powered client acquisition system.
+Includes a premium website, AI marketing engine, automation workflows,
+onboarding guides, and full documentation.
+
+FOLDERS INCLUDED:
+- site/               The agency website (Next.js 16, React 19, TypeScript, Tailwind CSS)
+- client-package/     Original onboarding guides (v1)
+- client-package-v2/  Upgraded premium onboarding guides (v2 — recommended)
+- docs/               Technical documentation and marketing playbook
+- system-check/       System health verification tools
+- .claude/            Claude Code configuration
+
+WHAT TO OPEN FIRST:
+1. Open the folder: client-package-v2
+2. Read the file: START-HERE.md
+3. Follow the step-by-step instructions inside
+
+QUICK START (for developers):
+1. cd ai-agency-system/site
+2. npm install
+3. npm run dev
+4. Open http://localhost:3000
+
+REQUIREMENTS:
+- Node.js v18+  (https://nodejs.org)
+- Git           (https://git-scm.com)
+- VS Code       (https://code.visualstudio.com)
+
+TECH STACK:
+- Next.js 16 (App Router)
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- Motion (Framer Motion)
+
+For questions or support, refer to the documentation in docs/ or
+the onboarding guides in client-package-v2/.

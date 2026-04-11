@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:UsersfrancProjectsai-agency-system -not -path */node_modules/* -not -path */.next/* -not -path */.git/* -type f)",
+      "Bash(npx next:*)",
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(npx vercel:*)",
+      "WebFetch(domain:ai-agency-system-xi.vercel.app)",
+      "Bash(git:*)",
+      "Bash(mkdir -p out)",
+      "Bash(npx remotion:*)",
+      "Bash(gh api:*)",
+      "Bash(curl:*)",
+      "Bash(start:*)",
+      "Bash(npm install:*)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist:*)"
+    ]
+  }
+}

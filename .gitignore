@@ -14,3 +14,4 @@ yarn-debug.log*
 
 # backups
 _old_duplicates_backup/
+.gitnexus
